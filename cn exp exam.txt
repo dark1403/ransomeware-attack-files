@@ -1,0 +1,224 @@
+cn code - 
+1) - <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Webpage Title</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Linking CSS -->
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Webpage</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>This is a paragraph about our webpage.</p>
+        </section>
+        
+        <section id="services">
+            <h2>Our Services</h2>
+            <ul>
+                <li>Service 1</li>
+                <li>Service 2</li>
+                <li>Service 3</li>
+            </ul>
+        </section>
+        
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Your Webpage Name. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+
+2) html -  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Webpage</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Linking to external CSS -->
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Styled Webpage</h1>
+    </header>
+    <main>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>This is a paragraph about our webpage.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Your Webpage Name.</p>
+    </footer>
+</body>
+</html>
+ 
+CSS-
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: Arial, sans-serif; /* Font style */
+    line-height: 1.6; /* Line spacing */
+    background-color: #f4f4f4; /* Background color */
+    color: #333; /* Text color */
+}
+
+/* Header Styles */
+header {
+    background: #35424a; /* Header background color */
+    color: #ffffff; /* Header text color */
+    padding: 20px 0; /* Padding for header */
+    text-align: center; /* Centered text */
+}
+
+/* Main Section Styles */
+main {
+    padding: 20px; /* Padding for main content */
+}
+
+/* Section Styles */
+section {
+    background: #ffffff; /* Background color for sections */
+    border: 1px solid #dddddd; /* Border around sections */
+    margin-bottom: 20px; /* Spacing between sections */
+    padding: 15px; /* Padding for sections */
+}
+
+/* Heading Styles */
+h2 {
+    color: #35424a; /* Color for subheadings */
+}
+
+/* Paragraph Styles */
+p {
+    margin-bottom: 15px; /* Spacing below paragraphs */
+}
+
+/* Footer Styles */
+footer {
+    text-align: center; /* Centered footer text */
+    padding: 10px 0; /* Padding for footer */
+    background: #35424a; /* Footer background color */
+    color: #ffffff; /* Footer text color */
+}
+
+
+4) - html--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Webpage</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Linking CSS -->
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Interactive Webpage</h1>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>This is a paragraph about our webpage.</p>
+            <button id="toggleButton">Show More</button>
+            <div id="extraContent" style="display: none;">
+                <p>This is additional content that can be toggled.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Your Webpage Name.</p>
+    </footer>
+
+    <script src="script.js"></script> <!-- Linking JavaScript -->
+</body>
+</html>
+ 
+css---
+/* Basic Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background: #35424a;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+button {
+    background-color: #35424a;
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2a2f33; /* Darken button on hover */
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #35424a;
+    color: #ffffff;
+}
+
+javascript --
+// Select the button and the extra content div
+const toggleButton = document.getElementById('toggleButton');
+const extraContent = document.getElementById('extraContent');
+
+// Add an event listener to the button
+toggleButton.addEventListener('click', function() {
+    // Check the current display style of the extra content
+    if (extraContent.style.display === 'none') {
+        extraContent.style.display = 'block'; // Show content
+        toggleButton.textContent = 'Show Less'; // Change button text
+    } else {
+        extraContent.style.display = 'none'; // Hide content
+        toggleButton.textContent = 'Show More'; // Change button text back
+    }
+});
